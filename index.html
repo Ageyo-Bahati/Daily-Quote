@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Facts & Quotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Daily Dose of Facts & Motivation</h1>
+    </header>
+
+    <section id="content">
+        <div class="card" id="fact-card">
+            <h2>Today's Fact</h2>
+            <p id="fact"></p>
+        </div>
+
+        <div class="card" id="quote-card">
+            <h2>Today's Quote</h2>
+            <p id="quote"></p>
+        </div>
+
+        <div class="card" id="motivation-card">
+            <h2>Today's Motivation</h2>
+            <p id="motivation"></p>
+        </div>
+        
+        <div id="ad-space" class="ad">
+            <p>Advertisement</p>
+        </div>
+
+        <button id="premium-btn">Go Premium & Remove Ads</button>
+    </section>
+
+    <!-- Premium Payment Modal -->
+    <div id="premium-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Upgrade to Premium</h2>
+            <p>Enjoy ad-free content, exclusive quotes, and much more!</p>
+            <p>Only $5 - Payment Options:</p>
+            <div class="payment-options">
+                <button id="paypal-btn" class="pay-btn">Pay with PayPal</button>
+                <button id="remitly-btn" class="pay-btn">Pay with Remitly</button>
+                <button id="mpesa-btn" class="pay-btn">Pay with MPesa</button>
+            </div>
+            <p id="payment-instructions" style="display:none;"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Daily Facts & Quotes</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
